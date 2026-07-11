@@ -22,7 +22,7 @@ db.init_app(app)
 with app.app_context():
     db.engine.connect()
     print("Database connection successful!")
-
+  
 @app.route("/register",methods=["POST"])
 def register():
 
