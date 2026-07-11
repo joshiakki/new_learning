@@ -38,7 +38,7 @@ def register():
     
     hashed_password = generate_password_hash(password)
 
-    new_user = User(username=username, hash_password = hashed_password)
+    new_user = User(username=username, password = hashed_password)
 
     db.session.add(new_user)
     db.session.commit()
